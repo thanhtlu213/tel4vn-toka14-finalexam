@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web
+spec:
+  containers:
+  - name: redis
+    image: redis:latest
+  tolerations:
+  - key: cachesystem
+    value: redis
+    effect: NoSchedule
+    operator: Equal
