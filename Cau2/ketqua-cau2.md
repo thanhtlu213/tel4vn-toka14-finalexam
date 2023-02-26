@@ -3,7 +3,7 @@
 ## 1. Create multi Multi-Pod with volume "vol"
 
 ```
-$ cat <<'EOF' > tel4vn-bai2-multipod-deployment.yaml
+$ cat <<'EOF' > tel4vn-bai2-multipod.yaml
 ---
 apiVersion: v1
 kind: Namespace
@@ -38,7 +38,7 @@ spec:
         mountPath: /usr/share/nginx/html
 EOF
 
-$ kubectl apply -f tel4vn-bai2-multipod-deployment.yaml
+$ kubectl apply -f tel4vn-bai2-multipod.yaml
 ```
 
 ## 2. Check status deployment, pod
