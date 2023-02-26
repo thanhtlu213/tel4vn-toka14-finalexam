@@ -16,7 +16,6 @@ $ kubeadm join 172.16.1.25:6443 --token yszw81.d7uozabto6hb6uds --discovery-toke
 - View roles, AGE, VERSION, INTERNAL-IP, EXTERNAL-IP, OS-IMAGE,..:
 ```
 $ kubectl get nodes -owide
-NAME                   STATUS   ROLES                  AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME
 NAME                 STATUS   ROLES           AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME  
 k8s-master-test      Ready    control-plane   12h   v1.25.6   172.16.1.25   <none>        Ubuntu 20.04.4 LTS   5.4.0-139-generic   containerd://1.6.18
 k8s-worker-test-01   Ready    <none>          12h   v1.25.6   172.16.1.26   <none>        Ubuntu 20.04.4 LTS   5.4.0-139-generic   containerd://1.6.18
