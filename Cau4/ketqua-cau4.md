@@ -2,7 +2,12 @@
 
 ## I. Use Taint
 ## 1. Create taint
+- Remove taint default from master
+```
+kubectl taint node k8s-master-test node-role.kubernetes.io/control-plane:NoSchedule-
+```
 
+- Add a taint on master
 ```
 kubectl taint nodes k8s-master-test cachesystem=redis:NoSchedule
 ```
