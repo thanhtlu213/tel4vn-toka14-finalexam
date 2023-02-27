@@ -65,7 +65,7 @@ metadata:
   name: pod-reader
   namespace: cau3
 rules:
-- apiGroups: [""]
+- apiGroups: ["apps"]
   resources: ["deployments"]
   verbs: ["get", "list", "watch"]
 
